@@ -33,8 +33,16 @@ export default function Questions({ onChecked }) {
 
   return (
     <div className='questions'>
-        <h2 className='text-light'>{questions?.question}</h2>
+        
+        <div id="inner">
 
+        <div id="left">
+            <img src={questions?.img} alt="" />
+
+            <p><span>{questions?.right}</span><br /> <h5>{questions?.story}</h5></p>
+        </div>
+        <div id="right">
+        <h2 className='text-light'>{questions?.question}</h2>
         <ul key={questions?.id}>
             {
                 questions?.options.map((q, i) => (
@@ -45,7 +53,7 @@ export default function Questions({ onChecked }) {
                             name="options"
                             id={`q${i}-option`}
                             onChange={() => onSelect(i)}
-                        />
+                            />
 
                         <label className='text-primary' htmlFor={`q${i}-option`}>{q}</label>
                         <div className={`check ${result[trace] == i ? 'checked' : ''}`}></div>
@@ -53,6 +61,9 @@ export default function Questions({ onChecked }) {
                 ))
             }
         </ul>
+        </div>
+    </div>
+        
     </div>
   )
 }

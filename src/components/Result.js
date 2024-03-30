@@ -39,8 +39,8 @@ export default function Result() {
   return (
     <div className='container'>
         <h1 className='title text-light'>Quiz Application</h1>
-
         <div className='result flex-center'>
+        <img src="https://media.tenor.com/Mg5vA3MVUA8AAAAM/thank-you-alice-in-wonderland.gif" alt="" />
             <div className='flex'>
                 <span>Username</span>
                 <span className='bold'>{userId || ""}</span>
@@ -63,7 +63,7 @@ export default function Result() {
             </div>
             <div className='flex'>
                 <span>Quiz Result</span>
-                <span style={{ color : `${flag ? "#2aff95" : "#ff2a66" }` }} className='bold'>{flag ? "Passed" : "Failed"}</span>
+                <span style={{ color : `${flag ? "#FFA500" : "#ff2a66" }` }} className='bold'>{flag ? "Passed" : "Failed"}</span>
             </div>
         </div>
 

@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;    
     flex-direction: column;
-    border: 1px solid #cecece;
+    border: 1px solid #555555;
     padding: 3em 4em;
     gap: 1em;
 }
@@ -17,7 +17,7 @@
 
 .container .flex span {
     font-size: 1.4em;
-    color: #cecece;
+    color: #555555;
 }
 
 .container .flex span.achive {
@@ -31,10 +31,10 @@ table {
 }
 
 .table-header {
-    color: #cecece;
+    color: #FFFFFF;
     font-size: 1.1em;
     text-align: center;
-    background: #212121;
+    background: #2C3E50;
     padding: 18px 0;
 }
 
@@ -42,7 +42,8 @@ table {
     font-size: 1.1em;
     text-align: center;
     /* color: #cecece; */
-    background: #d8d8d8;
+    color: #2C3E50;
+    background: #ADD8E6;
     padding: 18px 0;
 }
 

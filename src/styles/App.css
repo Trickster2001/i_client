@@ -8,32 +8,86 @@
 
 body, html{
   height: 100%;
-  background: var(--dark-color)
+  /* background: var(--dark-color); */
+  background-color: #3F8FFF;
+  background-image: url(https://iforum-de.c.huawei.com/dddd/uk/images/2021/6/11/9d67525c-b6c8-4920-950d-381c08e042d3_s.gif);
+  /* background-size: cover; */
+  /* background-position: center; */
+  overflow: scroll;
 }
 
 * > *{
     font-family: 'Poppins', sans-serif;
 }
 
+#inner {
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  color: #555555;
+}
+
+#left {
+  height: 100%;
+  width: 600px;
+  padding: 5px;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+#left img {
+  width: 200px;
+  height: 320px;
+  margin-right: 5px;
+  border-radius: 10px;
+}
+
+#left p h5{
+  font-size: 1.5rem;
+  animation: readText 4s linear infinite;
+}
+
+@keyframes readText {
+  0% { opacity: 0.5; }
+  50% { opacity: 1; }
+  100% { opacity: 0.5; }
+}
+
+#left span {
+  font-size: 2rem;
+  color: #2C3E50;
+  padding: 20px 0;
+  /* line-height: 50px; */
+}
+
+#right {
+  border-left: 1px solid #2C3E50;
+  width: 500px;
+  padding-left: 10px;
+}
+
 .container{
   display: block;
   position: relative;
-  margin: 40px auto;
+  margin: 40px 80px;
   height: auto;
-  width: 800px;
+  min-width: fit-content;
   padding: 20px;
 }
 
 .container .title{
-    font-size: 3em;
+    font-size: 1.5em;
     text-align: center;
-    border: 5px solid var(--primary-color);
+    border: 5px solid ;
     padding: .3em .2em;
     border-radius: 4px;
 }
 
 .text-light {
-	color: var(--light-color)
+	color: var(--light-color);
+  color: #2C3E50;
+  /* background-color: #FFD166; */
 }
 
 .container ul{
@@ -44,7 +98,7 @@ body, html{
 }
 
 .container .questions{
-    padding: 3em;
+    /* padding: 3em; */
 }
 
 /* 
@@ -77,11 +131,12 @@ body, html{
 
 .next{
     background-color: var(--primary-color);
+    background-color: #FFA500;
     justify-self: flex-end;
 }
 
 .prev{
-    background-color: #faff5a;
+    background-color: #FFA500;
     justify-self: flex-start;
 }
 
@@ -111,10 +166,11 @@ ul li label{
   z-index: 9;
   cursor: pointer;
   -webkit-transition: all 0.25s linear;
+  color: #555555;
 }
 
 ul li:hover label{
-	color: #FFFFFF;
+	color: #FFA500;
 }
 
 ul li .check{
@@ -151,20 +207,24 @@ ul li .check::before {
 
 
 input[type=radio]:checked ~ .check {
-  border: 5px solid var(--primary-color)
+  border: 5px solid var(--primary-color);
+  border: 5px solid #2C3E50;
 }
 
 input[type=radio]:checked ~ .check::before{
-  background: var(--primary-color)
+  background: var(--primary-color);
+  background-color: #2C3E50;
 }
 
 input[type=radio]:checked ~ .text-primary{
-  color: var(--primary-color)
+  color: var(--primary-color);
+  color: #2C3E50;
 } 
 
 /* To get selected option we are using this checked class */
 .checked {
-  border: 5px solid var(--primary-color) !important;
+  border: 5px solid var(--primary-color) ;
+  border: 5px solid #2C3E50;
 }
 
 .checked::before{
